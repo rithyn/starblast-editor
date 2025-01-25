@@ -27,33 +27,8 @@
     right: 0;
     background: rgba(0,0,0,.5)
 }</style>
-<script lang="ts" setup>
-import type * as monaco from 'monaco-editor'
+<script lang="js" setup>
+const value = ref('this.options = {\n  // see documentation for options reference\n  root_mode: "survival",\n  map_size: 30\n};\n\nthis.tick = function(game) {\n  // do mod stuff here ; see documentation\n}');
 
-const lang = ref<'plaintext' | 'html' | 'css' | 'javascript'>('plaintext')
-const options: monaco.editor.IEditorConstructionOptions = {
-  automaticLayout: true
-}
-
-const val = ref('Hello nuxt-monaco-editor!')
-const originalVal = 'Hello nuxt-monaco-editor.'
-const modifiedVal = ref('Hello nuxt-monaco-editor!!!')
-console.log(lang.value)
-watchEffect(() => {
-  switch (lang.value) {
-    case 'plaintext':
-      val.value = 'Hello nuxt-monaco-editor!'
-      break
-    case 'html':
-      val.value = '<!DOCTYPE html>\n<html>\n  <body>\n    <h1>Hello nuxt-monaco-editor!</h1>\n  </body>\n</html>'
-      break
-    case 'css':
-      val.value = '.hello__nuxt-monaco-editor {\n  border: 1px solid black;\n}'
-      break
-    case 'javascript':
-      val.value = "alert('Hello nuxt-monaco-editor!')"
-      break
-  }
-})
 
 </script>

@@ -1,6 +1,9 @@
 <template>
+    <body>
+        
     <div class="wrapper">
       <Header />
+
       <div class="footer"></div>
       <div class="centerpanel">
         <EditorPannel />
@@ -20,16 +23,26 @@
       </div>
     </div>
     <UNotifications />
-  </template>
+    </body>
+</template>
   
-
+<script>
+definePageMeta({
+  colorMode: 'light',
+})
+</script>
 <style>
 * {
     margin: 0;
-    padding: 0
+    padding: 0 
 }
 
-body,html {
+
+::root {
+    background: hsl(0, 0%, 15%);
+    color: rgba(255,255,255,.7)
+}
+.dark-mode {
     background: hsl(0,0%,15%);
     color: rgba(255,255,255,.7)
 }
@@ -466,7 +479,6 @@ a {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background-color: #000;
     background-color: hsla(0,0%,30%,0.9);
     color: #fff;
     content: attr(data-tooltip);
@@ -917,3 +929,4 @@ a {
 }
 </style>
 
+<script src="./s/Browser.js"></script>

@@ -1,32 +1,25 @@
 <script setup lang="ts">
+import type { ISelection } from 'monaco-editor'
+import ModdingGame from '../../s/API.cjs'
 const items = [
   [{
-    label: 'Profile',
-    avatar: {
-      src: 'https://avatars.githubusercontent.com/u/739984?v=4'
-    }
-  }], [{
-    label: 'Edit',
-    icon: 'i-heroicons-pencil-square-20-solid',
-    shortcuts: ['E'],
-    click: () => {
-      console.log('Edit')
+    label: 'Start',
+    icon: 'i-material-symbols:arrow-upload-ready-rounded',
+        click: () => {
+      console.log('Start')
     }
   }, {
-    label: 'Duplicate',
-    icon: 'i-heroicons-document-duplicate-20-solid',
-    shortcuts: ['D'],
+    label: 'Stop',
+    icon: 'i-material-symbols:stop-circle-rounded',
     disabled: true
   }], [{
-    label: 'Archive',
-    icon: 'i-heroicons-archive-box-20-solid'
-  }, {
-    label: 'Move',
-    icon: 'i-heroicons-arrow-right-circle-20-solid'
-  }], [{
+    label: 'Download',
+    icon: 'i-mdi:file-download',
+    click: () => {
+      console.log('Download')  }
+    }], [{
     label: 'Delete',
     icon: 'i-heroicons-trash-20-solid',
-    shortcuts: ['⌘', 'D']
   }]
 ]
 </script>

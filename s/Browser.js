@@ -1,5 +1,5 @@
 import THREE from 'three';
-import WS from 'ws';
+import WebSocket from 'ws';
 import $ from 'jquery';
 
 (function(s, t, a, r, b, l, i, o) {

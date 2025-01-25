@@ -1,5 +1,5 @@
 const StarblastModding = require('starblast-modding');
-class ModdingGame {
+export default class ModdingGame {
     contructor(script, ecp, region, url=false) {
         this.client = new StarblastModding.BrowserClient({}).setECPKey(ecp).setRegion(region);
         url ? this.client.loadCodeFromUrl(url) : this.client.loadCodeFromString(script);

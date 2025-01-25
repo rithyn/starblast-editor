@@ -11,7 +11,6 @@ const toast = useToast()
       <div class="iconsbar editoriconsbar flex justify-between">
         <UBadge color="gray" variant="soft" size="md">Mod Code</UBadge>
         <Dropdown/>
-        <SlideOver/>
 
       </div>
       <div class="insideeditorpanel">
