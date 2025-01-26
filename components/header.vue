@@ -1,8 +1,6 @@
 <template>
     <div class="header">
       <div style="float:right">
-        <SlideOver/>
-        <TestSlide/>
         <UButton color="black" size="lg" variant="link" icon="i-material-symbols:book-2-rounded" to="https://starblast-api.vercel.app/" target="_blank">Starblast Modding Documentation</UButton>
         <UButton color="black" size="lg" variant="link" icon="i-streamline:interface-setting-wrench-crescent-tool-construction-tools-wrench-setting-edit-adjust" to="https://starblast.io/shipeditor" target="_blank">Ship Editor</UButton>
       </div>
@@ -26,23 +24,29 @@ definePageMeta({
   padding-top: 9px;
   height: 60px;
   text-align: left;
-  border-bottom: solid 2px hsl(0, 0%, 80%);
-  box-shadow: 0 0 30px hsl(0,0%,50%);
+  border-bottom: solid 1px hsl(0, 0%, 80%);
+  color: #fff;
+  box-shadow: 0 0 20px hsl(0,0%,50%);
 }
 .header div {
-  padding: 5px 5px;
-  position: fixed;
+  padding: 0px 0px;
+  position: center;
   top: 5px;
   right: 10px;
 }
+.logo {
+    margin: 5px 30px 0 10px;
+    height: 40px
+}
+
+
 
 .header div a {
-  border-radius: 2px;
   padding: 8px 10px;
   margin: 5px;
   font-size: 1.2em;
   font-family: 'Lato', sans-serif;
-  background-color: rgba(255,255,255,.25);
+  background-color: gray;
   border-radius: 5px;
 }
 
@@ -50,4 +54,5 @@ definePageMeta({
 .header i {
     font-size: 1.5em
 }
+
 </style>

@@ -1,14 +1,14 @@
-import { Head } from "./.nuxt/components";
-
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
   modules: ['nuxt-monaco-editor', '@nuxt/ui'],
-  Head: {
-    importScripts: [
-      
+
+  imports: {
+    presets: [
+      {
+        from: 'vue-shell',
+        imports: ['v-shell']
+      }
     ]
-  }
-  
+  },
+
+  compatibilityDate: '2025-01-26'
 })

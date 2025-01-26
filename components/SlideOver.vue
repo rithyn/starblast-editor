@@ -23,6 +23,7 @@ const toast = useToast()
             <ul>
                 <li>- <LoadECP/></li>
                 <li>- <LoadMod/></li>
+                <li>- <TestSlide/></li>
             </ul>
 
           </div>
@@ -38,6 +39,13 @@ export default {
 }
 </script>
 <style scoped>
+UButton {
+  padding: 0px 0px;
+  margin: auto;
+  position: center;
+  top: 5px;
+  right: 10px;
+}
 .container {
   display: flex;
   flex-direction: column;

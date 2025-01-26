@@ -10,6 +10,7 @@ const toast = useToast()
     <div class="editorpanel">
       <div class="iconsbar editoriconsbar flex justify-between">
         <UBadge color="gray" variant="soft" size="md">Mod Code</UBadge>
+        Advanced Editor
         <Dropdown/>
 
       </div>

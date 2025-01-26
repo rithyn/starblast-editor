@@ -1,7 +1,9 @@
-import THREE from 'three';
+import * as THREE from 'three';
 import WebSocket from 'ws';
 import $ from 'jquery';
-
+console.log('Module 1: three.js OBJLoader')
+let THREE = THREE || {};
+console.log(THREE.OBJLoader)  
 (function(s, t, a, r, b, l, i, o) {
     THREE.OBJLoader = function() {
         function t() {

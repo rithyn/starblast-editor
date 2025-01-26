@@ -26,11 +26,6 @@
     </body>
 </template>
   
-<script>
-definePageMeta({
-  colorMode: 'light',
-})
-</script>
 <style>
 * {
     margin: 0;
@@ -188,11 +183,6 @@ definePageMeta({
 #shipLoader .shipgroup.highlighted {
     border: 2px solid #333;
     background: linear-gradient(135deg,#35383d 0,#15181d 100%)
-}
-
-.logo {
-    margin: 5px 30px 0 10px;
-    height: 40px
 }
 
 .baseline {
@@ -929,4 +919,4 @@ a {
 }
 </style>
 
-<script src="./s/Browser.js"></script>
+<!-- <script src="./s/Browser.js"></script> -->

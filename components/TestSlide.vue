@@ -58,6 +58,7 @@ iframe {
   text-align: center;
   margin-bottom: 20px;
   width: 100%;
+  height: 100%;
 }
 
 .tools {
