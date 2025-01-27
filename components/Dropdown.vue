@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import type { ISelection } from 'monaco-editor'
-import ModdingGame from '../../s/API.cjs'
+import type { ISelection } from 'monaco-editor';
+import Editor from './Editor.vue';
+
 const items = [
   [{
     label: 'Start',

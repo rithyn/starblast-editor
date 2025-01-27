@@ -25,8 +25,9 @@ _\ | || (_| | |  | |_) | | (_| \__ | |_
     <div id="prompt">
       <div id="input">
         <span id="prompt-text">
-          >
+          > <input id="input-text" type="text" autofocus/>
         </span>
+        
       </div>
     </div>
   </div>
@@ -37,15 +38,35 @@ _\ | || (_| | |  | |_) | | (_| \__ | |_
 </script>
 
 <style>
-#terminal {
+#input-text {
+  background: none;
+  border: none;
+  color: white;
+  outline: none;
+  font-family: monospace;
+  font-size: 16px;
   width: 100%;
-  height: 200px;
-  text-align: center;
 }
 
-pre {
-  font-size: xx-small;
-  display: inline-block;
-  text-align: left;
+#input-text::placeholder {
+  color: white;
+}
+
+#input-text:focus {
+  outline: none;
+}
+
+#input-text::after {
+  content: '█';
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 </style>
